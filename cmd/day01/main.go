@@ -4,7 +4,7 @@ import (
     "fmt"
 	"strings"
 	"strconv"
-	
+
     "advent-of-code/pkg/utils"
 )
 
@@ -23,7 +23,7 @@ func turnDial(start, dist int) (pos, rotations int) {
 }
 
 // Part 1: Count the number of times the dial points to zero after a turn
-// Part 2: Count the number of times the dial points to zero at any time during a turn
+// Part 2: Count the number of times the dial points to zero at any time throughout a turn
 func main() {
 	input := utils.ReadInput(1)
 	lines := strings.Fields(input)
