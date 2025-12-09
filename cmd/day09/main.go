@@ -86,16 +86,16 @@ func main() {
 	})
 
 	//
-	// At this point, the rectangles slice contains every unique rectangle we can make from pairs
-	// of red tiles. This slice is sorted in decreasing order of total area, meaning the solution
-	// to part 1 (the largest such rectangle) is just the first entry in the slice.
+	// At this point, the rectangles slice contains every unique rectangle we can make from pairs of red tiles.
+	// This slice is sorted in decreasing order of total area, meaning the solution to part 1 (the largest such
+	// rectangle) is just the first entry in the slice.
 	//
 
 	fmt.Println("Part 1:", rectangles[0].Area)
 
 	//
-	// For part 2, we can iterate over this slice until we find the first rectangle completely
-	// contained within the polygon formed by redTiles.
+	// For part 2, we can iterate over this slice until we find the first rectangle completely contained within 
+	// the polygon formed by redTiles.
 	//
 	// Note: To determine if a rectangle is completely contained, I am checking whether the path ever crosses
 	// from the the border/outside to the inside of the rectangle. It is possible that the rectangle's interior
